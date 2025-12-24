@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fashion Hub | Premium Garments Tamil Nadu</title>
+    
+    <!-- Fonts: Inter for Modern look, Noto Sans Tamil for perfect Tamil rendering -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+Tamil:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP NAVIGATION -->
+    <header class="main-header">
+        <nav class="container navbar">
+            <div class="logo">
+                <span class="logo-text">FASHION<span class="gold">HUB</span></span>
+            </div>
+            
+            <div class="header-right">
+                <ul class="nav-links desktop-only">
+                    <li><a href="#home" class="lang" data-en="Home" data-ta="முகப்பு">Home</a></li>
+                    <li><a href="#products" class="lang" data-en="Collections" data-ta="சேகரிப்புகள்">Collections</a></li>
+                    <li><a href="#about" class="lang" data-en="About" data-ta="எங்களைப்பற்றி">About</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button onclick="switchLang('en')" id="btn-en" class="active">EN</button>
+                    <button onclick="switchLang('ta')" id="btn-ta">தமிழ்</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="lang" data-en="Trendy Fashion for Every Occasion" data-ta="ஒவ்வொரு நிகழ்விற்கும் ஸ்டைலான ஆடைகள்">
+                Trendy Fashion for Every Occasion
+            </h1>
+            <p class="lang" data-en="Experience the best quality readymade garments for your whole family in the heart of Tamil Nadu." 
+               data-ta="உங்கள் முழு குடும்பத்திற்கும் சிறந்த தரமான ஆயத்த ஆடைகளை தமிழ்நாட்டின் இதயப்பகுதியில் அனுபவியுங்கள்.">
+                Experience the best quality readymade garments for your whole family.
+            </p>
+            <div class="hero-btns">
+                <a href="#products" class="btn btn-primary lang" data-en="Shop Now" data-ta="இப்போதே வாங்க">Shop Now</a>
+                <a href="#contact" class="btn btn-outline lang" data-en="Visit Shop" data-ta="கடையை பார்க்க">Visit Shop</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE PRODUCT SHOWCASE -->
+    <section id="products" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="lang" data-en="Our Premium Collections" data-ta="எங்கள் பிரீமியம் சேகரிப்புகள்">Our Premium Collections</h2>
+                <p class="lang" data-en="Select a category to explore" data-ta="ஆராய்வதற்கு ஒரு வகையைத் தேர்ந்தெடுக்கவும்">Select a category to explore</p>
+            </div>
+
+            <!-- Horizontal Scrollable Category Bar -->
+            <div class="category-bar">
+                <button class="cat-btn active" onclick="filterProducts('all')" data-cat="all">
+                    <span class="lang" data-en="All" data-ta="அனைத்தும்">All</span>
+                </button>
+                <button class="cat-btn" onclick="filterProducts('men')" data-cat="men">
+                    <span class="lang" data-en="Men's Wear" data-ta="ஆண்கள்">Men's Wear</span>
+                </button>
+                <button class="cat-btn" onclick="filterProducts('women')" data-cat="women">
+                    <span class="lang" data-en="Women's Wear" data-ta="பெண்கள்">Women's Wear</span>
+                </button>
+                <button class="cat-btn" onclick="filterProducts('kids')" data-cat="kids">
+                    <span class="lang" data-en="Kids Wear" data-ta="குழந்தைகள்">Kids Wear</span>
+                </button>
+                <button class="cat-btn" onclick="filterProducts('party')" data-cat="party">
+                    <span class="lang" data-en="Party Wear" data-ta="விசேஷ ஆடைகள்">Party Wear</span>
+                </button>
+            </div>
+
+            <!-- Dynamic Product Grid -->
+            <div id="product-grid" class="product-grid">
+                <!-- JS will inject products here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-circle"><i class="fas fa-gem"></i></div>
+                    <h4 class="lang" data-en="Top Quality" data-ta="உயர்தரம்">Top Quality</h4>
+                    <p class="lang" data-en="Handpicked fabrics for comfort." data-ta="வசதிக்காக தேர்ந்தெடுக்கப்பட்ட துணிகள்.">Handpicked fabrics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle"><i class="fas fa-wallet"></i></div>
+                    <h4 class="lang" data-en="Best Price" data-ta="சிறந்த விலை">Best Price</h4>
+                    <p class="lang" data-en="Wholesale prices for everyone." data-ta="அனைவருக்கும் மொத்த விலை.">Wholesale prices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle"><i class="fas fa-star"></i></div>
+                    <h4 class="lang" data-en="Local Trust" data-ta="உள்ளூர் நம்பிக்கை">Local Trust</h4>
+                    <p class="lang" data-en="Trusted by 10,000+ families." data-ta="10,000+ குடும்பங்களின் நம்பிக்கை.">Trusted by families.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <div class="container about-flex">
+            <div class="about-text">
+                <h2 class="lang" data-en="About Fashion Hub" data-ta="ஃபேஷன் ஹப் பற்றி">About Fashion Hub</h2>
+                <p class="lang" 
+                   data-en="Founded in the heart of Tamil Nadu, we bring you the latest trends with traditional values. Our mission is to provide stylish, high-quality clothing that makes every customer feel confident and beautiful."
+                   data-ta="தமிழ்நாட்டின் மையப்பகுதியில் நிறுவப்பட்ட நாங்கள், பாரம்பரிய மதிப்புகளுடன் சமீபத்திய மாடல்களை உங்களுக்கு வழங்குகிறோம். ஒவ்வொரு வாடிக்கையாளரையும் நம்பிக்கையுடனும் அழகாகவும் உணர வைக்கும் ஸ்டைலான, உயர்தர ஆடைகளை வழங்குவதே எங்கள் நோக்கம்.">
+                    Providing stylish, high-quality clothing for over 20 years.
+                </p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item"><b>25+</b> <span class="lang" data-en="Years" data-ta="ஆண்டுகள்">Years</span></div>
+                <div class="stat-item"><b>50k+</b> <span class="lang" data-en="Items Sold" data-ta="விற்பனை">Items Sold</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section bg-dark text-white">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2 class="lang" data-en="Contact Us" data-ta="தொடர்பு கொள்ள">Contact Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 12, Temple Road, Near Bus Stand, Madurai, TN.</p>
+                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fab fa-whatsapp"></i> +91 98765 43210</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Name / பெயர்" required>
+                <input type="tel" placeholder="Mobile / போன்" required>
+                <textarea placeholder="Message / செய்தி" rows="3"></textarea>
+                <button type="submit" class="btn btn-primary lang" data-en="Send Message" data-ta="அனுப்புக">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 Fashion Hub Tamil Nadu. <span class="lang" data-en="All Rights Reserved" data-ta="அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை">All Rights Reserved</span></p>
+    </footer>
+
+    <!-- MOBILE BOTTOM NAVIGATION (Fixed) -->
+    <div class="mobile-nav">
+        <a href="tel:+919876543210" class="m-nav-item">
+            <i class="fas fa-phone"></i>
+            <span class="lang" data-en="Call" data-ta="அழைக்க">Call</span>
+        </a>
+        <a href="https://wa.me/919876543210" class="m-nav-item whatsapp-color">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+        <a href="#products" class="m-nav-item">
+            <i class="fas fa-tshirt"></i>
+            <span class="lang" data-en="Shop" data-ta="கடை">Shop</span>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
